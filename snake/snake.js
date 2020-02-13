@@ -3,6 +3,14 @@ var ctx = ca.getContext("2d");
 
 var sc = document.getElementById("sc");
 
+var bt_up = document.getElementById("bt_up");
+
+var bt_left = document.getElementById("bt_left");
+
+var bt_right = document.getElementById("bt_right");
+
+var bt_down = document.getElementById("bt_down");
+
 
 //////全局变量区
 const MapWidth = ca.width;
@@ -267,6 +275,38 @@ function gameOver(){
 	}
 }
 
+
+
+////// 事件绑定区
+
+bt_up.onclick = function(){
+	if(head.dir != 's'){
+		head.up();
+		head.dir = 'w';
+	} 
+		
+};
+
+bt_left.onclick = function(){
+	if(head.dir != 'd') {
+		head.left();
+		head.dir = 'a';
+	}
+};
+
+bt_right.onclick = function(){
+	if(head.dir != 'a') {
+		head.right();
+		head.dir = 'd';
+	}
+};
+
+bt_down.onclick = function(){
+	if(head.dir != 'w'){
+		head.down();
+		head.dir = 's';
+	}
+};
 
 //按键响应
 document.onkeydown = function(e){

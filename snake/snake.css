@@ -42,3 +42,38 @@ div.scoreboard{
 
 }
 
+div.b{
+	/*border:2px solid blue;*/
+}
+
+.b1{
+	width: 40%;
+	margin: auto;
+}
+
+.b1 button{
+	width: 100%;
+	padding: 10px;
+}
+
+
+.b2{
+	width: 40%;
+	margin: auto;
+}
+
+.b2 button{
+	width: 50%;
+	padding: 10px;
+}
+
+
+.b3{
+	width: 40%;
+	margin: auto;
+}
+
+.b3 button{
+	width: 100%;
+	padding: 10px;
+}
